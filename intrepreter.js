@@ -21,5 +21,6 @@ function sline(datta3){
 	return s3.length
 }
 var fs=require("fs")
-dattas=fs.readFileSync("run.shell")
+args=process.argv.slice(2)
+dattas=fs.readFileSync(args[0])
 sline(dattas)
